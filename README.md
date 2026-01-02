@@ -20,13 +20,25 @@ NodeJS aplikácia pre správu používateľov s gRPC komunikáciou (Server + Cli
 
 ## Spustenie
 
+### Príprava
+```bash
+# 1. Skopírujte .env.example na .env
+cp .env.example .env
+```
+
+### Spustenie
 ```bash
 # Spustenie celého systému
-docker-compose up
+docker-compose up -d
 
 # Server: http://localhost:8081
 # Client: http://localhost:8091
 # DB: http://localhost:3000
+```
+
+### Zastavenie
+```bash
+docker-compose down
 ```
 
 ## Funkcionality

@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Jan",
+    "lastName": "Novák",
+    "company": "Tech Solutions",
+    "email": "jan.novak@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Mária",
+    "lastName": "Kováčová",
+    "company": "Digital Agency",
+    "email": "maria.kovacova@example.com",
+    "password": "password456"
+  }
+]
