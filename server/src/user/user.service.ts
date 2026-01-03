@@ -17,7 +17,7 @@ interface User {
 export class UserService {
   private readonly dbUrl = process.env.DB_URL || 'http://localhost:3000';
   private readonly jwtSecret = process.env.JWT_SECRET || 'your-secret-key';
-  private readonly jwtExpiresIn = process.env.JWT_EXPIRES_IN || '24h';
+  private readonly jwtExpiresIn: string = process.env.JWT_EXPIRES_IN || '24h';
   private readonly bcryptSaltRounds = parseInt(process.env.BCRYPT_SALT_ROUNDS || '10', 10);
 
   async createUser(data: {
@@ -95,17 +95,31 @@ export class UserService {
     error?: string;
   }> {
     try {
+      if (![5, 10, 25].includes(limit)) {
+        return {
+          users: [],
+          total: 0,
+          offset,
+          limit,
+          error: 'Limit must be 5, 10, or 25',
+        };
+      }
+
       const response = await axios.get(`${this.dbUrl}/users`);
       const allUsers: User[] = response.data;
 
-      const paginatedUsers = allUsers.slice(offset, offset + limit);
+      const sortedUsers = allUsers.sort((a, b) =>
+        a.email.localeCompare(b.email)
+      );
+
+      const paginatedUsers = sortedUsers.slice(offset, offset + Math.min(limit, 25));
 
       return {
         users: paginatedUsers.map((u) => ({
           userId: u.userId,
           email: u.email,
         })),
-        total: allUsers.length,
+        total: sortedUsers.length,
         offset,
         limit,
       };
@@ -147,7 +161,7 @@ export class UserService {
           email: user.email,
         },
         this.jwtSecret,
-        { expiresIn: this.jwtExpiresIn },
+        { expiresIn: this.jwtExpiresIn } as jwt.SignOptions,
       );
 
       return { token };
