@@ -82,26 +82,5 @@
     "company": "Marketing Pro",
     "email": "veronika.pokorna@example.com",
     "password": "veropass789"
-  },
-  {
-    "firstName": "Michal",
-    "lastName": "Sedláček",
-    "company": "Security Systems",
-    "email": "michal.sedlacek@example.com",
-    "password": "michalpass123"
-  },
-  {
-    "firstName": "Petra",
-    "lastName": "Říhová",
-    "company": "Health Tech",
-    "email": "petra.rihova@example.com",
-    "password": "petrapass456"
-  },
-  {
-    "firstName": "Ondřej",
-    "lastName": "Beneš",
-    "company": "Gaming Studios",
-    "email": "ondrej.benes@example.com",
-    "password": "ondrejpass789"
   }
 ]

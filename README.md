@@ -48,16 +48,4 @@ docker-compose down
 - Paginovaný zoznam používateľov
 - Prihlásenie používateľa (JWT)
 
-## Development
 
-```bash
-# Server
-cd server
-npm install
-npm run start:dev
-
-# Client
-cd client
-npm install
-npm run start:dev
-```
