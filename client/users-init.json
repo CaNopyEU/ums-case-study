@@ -12,5 +12,96 @@
     "company": "Digital Agency",
     "email": "maria.kovacova@example.com",
     "password": "password456"
+  },
+  {
+    "firstName": "Petr",
+    "lastName": "Dvořák",
+    "company": "StartupHub",
+    "email": "petr.dvorak@example.com",
+    "password": "password789"
+  },
+  {
+    "firstName": "Anna",
+    "lastName": "Procházková",
+    "company": "DataCorp",
+    "email": "anna.prochazkova@example.com",
+    "password": "securepass123"
+  },
+  {
+    "firstName": "Tomáš",
+    "lastName": "Svoboda",
+    "company": "CloudServices",
+    "email": "tomas.svoboda@example.com",
+    "password": "mypassword456"
+  },
+  {
+    "firstName": "Eva",
+    "lastName": "Černá",
+    "company": "FinTech Inc",
+    "email": "eva.cerna@example.com",
+    "password": "evapass789"
+  },
+  {
+    "firstName": "Jakub",
+    "lastName": "Veselý",
+    "company": "Mobile Apps",
+    "email": "jakub.vesely@example.com",
+    "password": "jakubpass123"
+  },
+  {
+    "firstName": "Kateřina",
+    "lastName": "Horáková",
+    "company": "E-commerce Plus",
+    "email": "katerina.horakova@example.com",
+    "password": "katpass456"
+  },
+  {
+    "firstName": "Martin",
+    "lastName": "Král",
+    "company": "AI Solutions",
+    "email": "martin.kral@example.com",
+    "password": "martinpass789"
+  },
+  {
+    "firstName": "Lucie",
+    "lastName": "Maršálková",
+    "company": "Design Studio",
+    "email": "lucie.marsalkova@example.com",
+    "password": "luciepass123"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Němec",
+    "company": "Consulting Group",
+    "email": "david.nemec@example.com",
+    "password": "davidpass456"
+  },
+  {
+    "firstName": "Veronika",
+    "lastName": "Pokorná",
+    "company": "Marketing Pro",
+    "email": "veronika.pokorna@example.com",
+    "password": "veropass789"
+  },
+  {
+    "firstName": "Michal",
+    "lastName": "Sedláček",
+    "company": "Security Systems",
+    "email": "michal.sedlacek@example.com",
+    "password": "michalpass123"
+  },
+  {
+    "firstName": "Petra",
+    "lastName": "Říhová",
+    "company": "Health Tech",
+    "email": "petra.rihova@example.com",
+    "password": "petrapass456"
+  },
+  {
+    "firstName": "Ondřej",
+    "lastName": "Beneš",
+    "company": "Gaming Studios",
+    "email": "ondrej.benes@example.com",
+    "password": "ondrejpass789"
   }
 ]
