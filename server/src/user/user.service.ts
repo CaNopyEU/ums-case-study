@@ -161,7 +161,10 @@ export class UserService {
           email: user.email,
         },
         this.jwtSecret,
-        { expiresIn: this.jwtExpiresIn } as jwt.SignOptions,
+        {
+          expiresIn: this.jwtExpiresIn,
+          algorithm: 'HS256',
+        } as jwt.SignOptions,
       );
 
       return { token };
